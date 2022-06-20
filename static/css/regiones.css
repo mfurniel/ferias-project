@@ -1,0 +1,37 @@
+.col {
+    height: 100px;
+    width: 100px;
+    background-color: rgba(13, 13, 3, 0.767);
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+  }
+
+  .col h3{
+    margin-top: 1.5rem;
+    text-decoration: none !important;
+  }
+
+  .col button{
+    background: none;
+    border: 0;
+    color: inherit;
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+  }
+
+  .bton{
+    background-color: transparent;
+    color: white;
+    border: none;
+  }
+
+  body{
+ 
+    background-image: url(../imgs/feria1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+  }
+

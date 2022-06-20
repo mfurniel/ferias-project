@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/index.css">     
+    <title>Ferias Chile</title>
+</head>
+<body>
+    
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Portal de Ferias Chile</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+
+    </header>
+
+    <main>
+        
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel" data-bs-pause=“false”>
+            <div class="carousel-inner">
+              <div class="carousel-item active" >
+                <img src="../static/imgs/feria1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" >
+                <img src="../static/imgs/feria2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../static/imgs/feria3.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="overlay">
+                    <div class="container">
+                        <div class="row align-items-center bg-inf">
+
+                            <div class="card column text-center cardlog justify-content-center" style="width: 22rem; height: 45vh;">
+                                <form method="POST">
+                                  <input type="hidden" name="csrf_token" value="">
+                                  <!-- <div class="container">
+                                      <div class="row"> -->
+                                          <div class="col-8 offset-2" >
+                                              <div class="mb-10">
+                                                  <label for="exampleInputEmail1" class="form-label">Correo Electronico</label>
+                                                  <input name="username" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">                                                    
+                                              </div>
+                                              <div class="mb-3">
+                                                  <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                                                  <input name="password" type="password" class="form-control" id="exampleInputPassword1">
+                                              </div>                                            
+                                              <button type="submit" class="btn btn-primary">Entrar</button>
+                                          </div>
+                                        <!-- </div>
+                                    </div> -->
+                              </form>
+                              </div>
+
+                            <div class="col-md-6 offset-md-2 text-center text-md-end fond">
+                                <h1>Bienvenido al Portal de Ferias Chilenas</h1>
+                                <p class="d-none d-md-block">Te damos la bienvenida al primer portal comercial de feriantes a nivel pais. Podras encontrar todas las ferias a nivel nacional y interactuar en la gran comunidad que estamos generando. Te espeamos con ansisas!</p>
+                                    <!-- <a href="#">Quiero ser Orador</a> -->
+                                    <!-- <button type="button">Comprar Tickets</button> -->
+                            </div>
+                        </div>
+                    </div>
+              </div>
+            </div>
+            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button> -->
+          </div>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
