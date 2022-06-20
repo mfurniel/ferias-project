@@ -53,3 +53,27 @@ def ferias():
     cur.close()
     conn.close()                      
     return render_template("ferias.html",nombres=nombres)
+
+@app.route('/puestos')
+def puestos():
+    conn = get_dbconnection() 
+    cur = conn.cursor()
+    sqlquery = "select nombre from puesto;"
+    cur.execute(sqlquery)
+    row = cur.fetchall() 
+    nombres=row
+    cur.close()
+    conn.close()                      
+    return render_template("puestos.html",nombres=nombres)
+
+@app.route('/negocio')
+def negocios():
+    conn = get_dbconnection() 
+    cur = conn.cursor()
+    sqlquery = "select nombre from producto;"
+    cur.execute(sqlquery)
+    row = cur.fetchall() 
+    nombres=row
+    cur.close()
+    conn.close()                      
+    return render_template("negocios.html",nombres=nombres)
