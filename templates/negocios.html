@@ -51,16 +51,48 @@
 
     </header>
 
-    <main class="container" style="margin-top:4rem">
+        
 
+
+
+
+        <div class="container card " style="width: 80rem; height: 20rem; margin-bottom: 1rem; margin-top:4rem">
+            
+            <div class="row">
+
+              <div class="col">
+
+                  <figure class="offset-3 mt-5">
+                    <img src="../static/imgs/girl.png" alt="">
+                  </figure>
+
+              </div>
+
+              <div class="col mt-5" >
+
+                <h3>{{datos[1]}} </h3>
+               
+                <p>{{datos[3]}}</p>
+
+
+                <h4>Dueño(a): {{persona[1]}} {{persona[2]}}</h4>
+                <h4>contacto: {{persona[3]}}</h4>
+                <h4>Correo: {{persona[4]}}</h4>
+                <h4>Puntuacion: {{datos[2]}}</h4>
+
+              </div>
+
+            </div>
+            
+        </div>
+
+
+    <main class="container d-flex" style="margin-top:4rem">
       {% for i in range(nombres|length) %}
-        <div class="card offset-1" style="width: 70rem; height: 20rem; margin-bottom: 1rem">
+        <div class="card" style="width: 30rem; height: 15rem;margin:1rem">
             <h3 class="card-title mt-4 ms-3">{{ nombres[i][0] }}</h3>
             <div class="card-body">
-              Datos del puestos:
-              Nombre dueño:
-              Contacto:
-              email:
+             
             </div>
         </div>
       {% endfor %}
